@@ -37,10 +37,13 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Lavender;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(250, 51);
+            this.label1.Location = new System.Drawing.Point(294, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(450, 35);
             this.label1.TabIndex = 0;
@@ -49,6 +52,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(360, 118);
@@ -59,10 +65,12 @@
             // 
             // adminButton
             // 
+            this.adminButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.adminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminButton.Location = new System.Drawing.Point(330, 174);
             this.adminButton.Name = "adminButton";
-            this.adminButton.Size = new System.Drawing.Size(230, 40);
+            this.adminButton.Size = new System.Drawing.Size(347, 57);
             this.adminButton.TabIndex = 2;
             this.adminButton.Text = "Admin";
             this.adminButton.UseVisualStyleBackColor = true;
@@ -70,10 +78,12 @@
             // 
             // managerButton
             // 
+            this.managerButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.managerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.managerButton.Location = new System.Drawing.Point(330, 250);
             this.managerButton.Name = "managerButton";
-            this.managerButton.Size = new System.Drawing.Size(230, 40);
+            this.managerButton.Size = new System.Drawing.Size(347, 59);
             this.managerButton.TabIndex = 3;
             this.managerButton.Text = "Manager";
             this.managerButton.UseVisualStyleBackColor = true;
@@ -81,10 +91,12 @@
             // 
             // officerButton
             // 
+            this.officerButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.officerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.officerButton.Location = new System.Drawing.Point(330, 326);
             this.officerButton.Name = "officerButton";
-            this.officerButton.Size = new System.Drawing.Size(230, 40);
+            this.officerButton.Size = new System.Drawing.Size(347, 59);
             this.officerButton.TabIndex = 4;
             this.officerButton.Text = "Security Officer";
             this.officerButton.UseVisualStyleBackColor = true;
@@ -95,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(900, 450);
+            this.ClientSize = new System.Drawing.Size(1099, 469);
             this.Controls.Add(this.officerButton);
             this.Controls.Add(this.managerButton);
             this.Controls.Add(this.adminButton);

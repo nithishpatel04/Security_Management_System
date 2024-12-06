@@ -36,7 +36,8 @@ namespace Security_Management_System
 
             if (userType == "Manager" && username == "manager" && password == "manager123")
             {
-                MessageBox.Show("Manager Login Successful!");
+                Manager manager = new Manager();
+                manager.Show();
             }
             else
             {

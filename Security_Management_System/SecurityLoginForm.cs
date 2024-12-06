@@ -36,7 +36,8 @@ namespace Security_Management_System
 
             if (userType == "Security Officer" && username == "officer" && password == "officer123")
             {
-                MessageBox.Show("Security Officer Login Successful!");
+                Security security = new Security();
+                security.Show();
             }
             else
             {

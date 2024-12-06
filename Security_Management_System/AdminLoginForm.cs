@@ -37,12 +37,18 @@ namespace Security_Management_System
             // Simple validation
             if (userType == "Admin" && username == "admin" && password == "admin123")
             {
-                MessageBox.Show("Admin Login Successful!");
+                Admin admin = new Admin();
+                admin.Show();
             }
             else
             {
                 MessageBox.Show("Invalid credentials. Please try again.");
             }
+        }
+
+        private void AdminLoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

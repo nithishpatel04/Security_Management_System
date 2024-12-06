@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_user.Designer.cs">
+      <DependentUpon>Add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Roles.Designer.cs">
+      <DependentUpon>Assign_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_User.Designer.cs">
+      <DependentUpon>Delete_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_User.Designer.cs">
+      <DependentUpon>Edit_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +88,12 @@
     <Compile Include="AdminLoginForm.Designer.cs">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,17 +102,71 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security.Designer.cs">
+      <DependentUpon>Security.cs</DependentUpon>
+    </Compile>
     <Compile Include="SecurityLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SecurityLoginForm.Designer.cs">
       <DependentUpon>SecurityLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLogs.Designer.cs">
+      <DependentUpon>SystemLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Security_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Security_Reports.Designer.cs">
+      <DependentUpon>View_Security_Reports.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_user.resx">
+      <DependentUpon>Add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Roles.resx">
+      <DependentUpon>Assign_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_User.resx">
+      <DependentUpon>Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_User.resx">
+      <DependentUpon>Edit_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerLoginForm.resx">
       <DependentUpon>ManagerLoginForm.cs</DependentUpon>
@@ -90,8 +180,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security.resx">
+      <DependentUpon>Security.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SecurityLoginForm.resx">
       <DependentUpon>SecurityLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemLogs.resx">
+      <DependentUpon>SystemLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Security_Reports.resx">
+      <DependentUpon>View_Security_Reports.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

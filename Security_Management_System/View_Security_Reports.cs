@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Security_Management_System
 {
@@ -17,25 +12,31 @@ namespace Security_Management_System
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void View_Security_Reports_Load(object sender, EventArgs e)
         {
-            DataTable table = new DataTable();
+            string query = "SELECT IncidentId, IncidentType, IncidentDescription, IncidentDate, Username FROM incidentreports";
 
-            table.Columns.Add("Report Id", typeof(int));         // Integer column
-            table.Columns.Add("Type Of Incident", typeof(string)); // String column
-            table.Columns.Add("Location", typeof(string));       // String column
-            table.Columns.Add("Date", typeof(DateTime));         // DateTime column
+            try
+            {
+                DatabaseHelper.Instance.OpenConnection();
 
-            table.Rows.Add(1, "Fire", "Warehouse A", DateTime.Now);
-            table.Rows.Add(2, "Break-in", "Office B", DateTime.Now);
-
-            dataGridView1.DataSource = table;
-
+                // Create a MySqlDataAdapter to execute the query and set the DataGridView's DataSource directly
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, DatabaseHelper.Instance.Connection))
+                {
+                    // Directly set the DataSource to the result of the adapter
+                    DataSet dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    dataGridView1.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                DatabaseHelper.Instance.CloseConnection();
+            }
         }
     }
 }

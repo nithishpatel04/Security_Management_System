@@ -29,11 +29,7 @@ namespace Security_Management_System
 
         }
 
-        private void Edit_button_Click(object sender, EventArgs e)
-        {
-            Edit_User edit_User = new Edit_User();
-            edit_User.Show();
-        }
+        
 
         private void Delete_button_Click(object sender, EventArgs e)
         {
@@ -41,10 +37,6 @@ namespace Security_Management_System
             delete_User.Show();
         }
 
-        private void Assign_button_Click(object sender, EventArgs e)
-        {
-            Assign_Roles assign_Roles = new Assign_Roles();
-            assign_Roles.Show();
-        }
+        
     }
 }
